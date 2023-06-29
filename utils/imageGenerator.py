@@ -19,7 +19,7 @@ PATH_IMAGE = PATH_IMAGE + folder_name + '/'
 
 
 def create_image_from_text(text: str, num: str):
-    width = 400
+    width = 405
     height = 240
 
     img = Image.new('RGB', (width, height), color='white')

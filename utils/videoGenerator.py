@@ -25,8 +25,6 @@ def get_cutted_video(length: int):
     y1, y2 = 0, h
     clip = crop(clip, x1=x1, y1=y1, x2=x2, y2=y2)
 
-    print(x1,x2,y1,y2)
-
     clip.write_videofile(PATH_SAVED_VIDEO + 'tmpCutEdited.mp4',codec='libx264')
 
     return PATH_SAVED_VIDEO + 'tmpCutEdited.mp4'
@@ -53,7 +51,7 @@ def create_final_video(path_image: str, path_audio: str, path_video: str, path_a
         start = float(start) + float(duration)
         final_clip = CompositeVideoClip([final_clip, title])
 
-    final_clip.write_videofile("test.mp4")
+    final_clip.write_videofile("Videos/TikTok.mp4")
 
     os.remove(path_cutted_video)
 
