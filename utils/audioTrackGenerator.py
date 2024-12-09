@@ -48,8 +48,8 @@ def generate_voice(path:str, choosen:str, voice_random:bool = False):
             os.rename(PATH_AUDIO + f"audio{num}.mp3", PATH_AUDIO + f"audio{num}_{clip.duration}.mp3")
             path_image = create_image_from_text(text=text,num=num)
             num = num +1
-        if "," in line:
-            newLine = line.split(',')
+        if "|" in line:
+            newLine = line.split('|')
             for phrase in newLine:
                 text = phrase
                 filepath = PATH_AUDIO + f"audio{num}.mp3"
@@ -58,10 +58,12 @@ def generate_voice(path:str, choosen:str, voice_random:bool = False):
                 last_clip_length = clip.duration
 
                 length += clip.duration
+                '''
                 if(length> 30):
                     os.remove(PATH_AUDIO + f"audio{num}.mp3")
                     print("non ho letto la riga: " + text)
                     break
+                '''
                 os.rename(PATH_AUDIO + f"audio{num}.mp3", PATH_AUDIO + f"audio{num}_{clip.duration}.mp3")
                 path_image = create_image_from_text(text=text,num=num)
                 num = num +1

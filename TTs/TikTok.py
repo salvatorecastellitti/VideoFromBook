@@ -81,7 +81,7 @@ class TikTok:
         headers = {
             "User-Agent": "com.zhiliaoapp.musically/2022600030 (Linux; U; Android 7.1.2; es_ES; SM-G988N; "
             "Build/NRD90M;tt-ok/3.12.13.1)",
-            "Cookie": f"sessionid=472c69860e969bd574ef1506eb269992",
+            "Cookie": f"sessionid=f9dd7ee6dbeb595347886664b77f6af1",
         }
 
         self.URI_BASE = (

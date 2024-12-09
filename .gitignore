@@ -4,3 +4,8 @@ tmpVideos/*
 tmpAudios/*
 Images/*
 Videos/*
+.DS_Store
+Books/tmpBook.txt
+TTs/__pycache__/TikTok.cpython-38.pyc
+TTs/__pycache__/TikTok.cpython-39.pyc
+utils/__pycache__/audioTrackGenerator.cpython-39.pyc
